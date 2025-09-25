@@ -9,7 +9,7 @@ const projects = [
   {
     title: "Portfolio Website",
     imgSrc: portfolioImg,
-    demoLink: "https://your-portfolio-demo.com",
+    demoLink: "https://tanvi-portfolio-nine.vercel.app/",
     tech: "HTML , CSS , Javascript , React",
     description: "Personal website showcasing projects and resume."
   },
