@@ -1,0 +1,143 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 13px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); 
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.3); 
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: #c8b6ff; 
+  text-shadow: 0 0 12px rgba(200, 182, 255, 0.6);
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar .logo:hover {
+  color: #c084fc; 
+  text-shadow: 0 0 15px rgba(192, 132, 252, 0.8);
+}
+
+/* Navbar Links */
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin-left: 35px;
+}
+
+.navbar ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #e9ddff; 
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #c084fc; 
+  transition: width 0.3s ease-in-out;
+  box-shadow: 0 0 8px rgba(192, 132, 252, 0.8);
+}
+
+.navbar ul li:hover a {
+  color: #c084fc;
+  text-shadow: 0 0 8px rgba(192, 132, 252, 0.7);
+}
+
+.navbar ul li:hover a::after {
+  width: 100%;
+}
+
+/* Hamburger Icon (Mobile) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 25px;
+  width: 30px;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 4px;
+  background-color: #e9ddff; 
+  box-shadow: 0 0 8px rgba(192, 132, 252, 0.7);
+  border-radius: 2px;
+}
+
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Tablet view and below (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* Hide the nav links initially */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Position the menu below the navbar */
+    right: 0;
+    background: #1a1a2e;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar ul li {
+    margin: 20px 0;
+  }
+
+  .navbar ul li a {
+    font-size: 18px;
+  }
+
+  .navbar ul.active {
+    display: flex; /* Show the menu when 'active' class is added */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Mobile view (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar ul li a {
+    font-size: 16px;
+  }
+}

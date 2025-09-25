@@ -1,0 +1,195 @@
+
+.projects-wrapper {
+  padding: 2rem;
+  height: 100vh;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); 
+}
+
+/* Heading */
+.projects-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #a78bfa;
+  padding-top: 40px;
+  text-shadow: 0 0 15px rgba(200, 182, 255, 0.6);
+}
+
+/* Container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Card */
+.card {
+  background: rgba(18, 18, 30, 0.9); 
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #e9ddff;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.4);
+  border: 1px solid rgba(192, 132, 252, 0.5); 
+  backdrop-filter: blur(6px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(192, 132, 252, 0.7);
+}
+
+/* Image */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
+}
+
+/* Content */
+.card-content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.tech {
+  font-size: 1rem;
+  color: #a78bfa;
+  margin: 0.3rem 0;
+  text-shadow: 0 0 6px rgba(167, 139, 250, 0.6);
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #d1c4ff; 
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+/* Button */
+.demo-button {
+  background: #6d28d9; 
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(109, 40, 217, 0.7);
+}
+
+.demo-button:hover {
+  background: transparent;
+  color: #c084fc;
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.8);
+  border: 1px solid #c084fc;
+}
+
+/* Media Queries */
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .projects-heading {
+    font-size: 2rem; /* Reduce heading size for mobile screens */
+    padding-top: 20px; /* Add some space above */
+  }
+
+  .projects-container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+    grid-template-columns: 1fr; /* Stack projects vertically */
+  }
+
+  .card {
+    padding: 1rem; /* Reduce padding inside cards for smaller screens */
+  }
+
+  .card-img {
+    height: 150px; /* Reduce the image height on mobile */
+  }
+
+  .tech {
+    font-size: 0.9rem; /* Smaller tech text */
+  }
+
+  .description {
+    font-size: 0.85rem; /* Smaller description text */
+  }
+
+  .demo-button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.4rem 0.8rem; /* Smaller button size */
+  }
+}
+
+/* Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .projects-heading {
+    font-size: 2.2rem; /* Slightly smaller heading on medium screens */
+  }
+
+  .projects-container {
+    padding: 2rem; /* Moderate padding for tablets */
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on tablets */
+  }
+
+  .card {
+    padding: 1.5rem; /* Slightly larger padding inside cards */
+  }
+
+  .card-img {
+    height: 180px; /* Slightly larger image height for medium screens */
+  }
+
+  .tech {
+    font-size: 1rem; /* Increase tech text size */
+  }
+
+  .description {
+    font-size: 0.9rem; /* Larger description text */
+  }
+
+  .demo-button {
+    font-size: 1rem; /* Adjust button text size for tablets */
+    padding: 0.5rem 1rem; /* Adjust button size */
+  }
+}
+
+/* Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .projects-heading {
+    font-size: 3rem; /* Increase heading size for larger screens */
+  }
+
+  .projects-container {
+    padding: 3rem; /* Add more padding for large screens */
+    gap: 2rem; /* Increase space between cards */
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row on large screens */
+  }
+
+  .card {
+    padding: 2rem; /* Add more padding to cards */
+  }
+
+  .card-img {
+    height: 250px; /* Larger image size */
+  }
+
+  .tech {
+    font-size: 1.1rem; /* Slightly larger tech text */
+  }
+
+  .description {
+    font-size: 1rem; /* Increase font size for descriptions */
+  }
+
+  .demo-button {
+    font-size: 1.1rem; /* Increase button font size */
+    padding: 0.6rem 1.2rem; /* Larger button size */
+  }
+}

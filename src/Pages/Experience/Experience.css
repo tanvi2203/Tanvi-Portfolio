@@ -1,0 +1,156 @@
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 80px 6% 0;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); 
+}
+
+/* Heading */
+.experience-container h1 {
+  color: #a78bfa;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(200, 182, 255, 0.6);
+}
+
+/* Card */
+.experience-card {
+  max-width: 600px;
+  margin: 20px auto;
+  background: rgba(18, 18, 30, 0.9); 
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.4); 
+  text-align: left;
+  color: #e9ddff;
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(192, 132, 252, 0.7);
+}
+
+/* Card Heading */
+.experience-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  /* color: #c084fc; */
+  color: white;
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
+}
+
+/* Card Text */
+.experience-card p {
+  color: #c084fc;
+  font-size: 13px;
+  /* color: white; */
+  margin: 5px 0;
+  line-height: 1.7;
+}
+#para {
+ color: #f0e4fc;
+
+}
+
+.experience-card em {
+ color: #cc9bfd;
+  font-style: italic;
+  text-shadow: 0 0 6px rgba(184, 166, 255, 0.5);
+}
+
+
+
+
+
+/* Media Queries */
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .experience-container {
+    padding: 60px 5% 0; /* Reduce padding on mobile */
+  }
+
+  .experience-container h1 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .experience-card {
+    max-width: 100%; /* Full width for cards on mobile */
+    margin: 20px 0; /* Adjust margin between cards */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .experience-card h2 {
+    font-size: 18px; /* Reduce font size for headings */
+  }
+
+  .experience-card p {
+    font-size: 14px; /* Adjust font size for paragraph */
+  }
+
+  .experience-card em {
+    font-size: 12px; /* Adjust font size for em text */
+  }
+}
+
+/* Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .experience-container {
+    padding: 70px 6% 0; /* Adjust padding for tablets */
+  }
+
+  .experience-container h1 {
+    font-size: 2.2rem; /* Slightly larger heading for tablets */
+  }
+
+  .experience-card {
+    max-width: 90%; /* Adjust width for tablet view */
+  }
+
+  .experience-card h2 {
+    font-size: 19px; /* Adjust font size for headings */
+  }
+
+  .experience-card p {
+    font-size: 15px; /* Adjust paragraph font size */
+  }
+
+  .experience-card em {
+    font-size: 13px; /* Adjust em text size */
+  }
+}
+
+/* Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .experience-container {
+    padding: 100px 10% 0; /* More padding for large screens */
+  }
+
+  .experience-container h1 {
+    font-size: 3rem; /* Larger heading size */
+  }
+
+  .experience-card {
+    max-width: 700px; /* Increase card width on larger screens */
+    padding: 25px; /* More padding for larger cards */
+  }
+
+  .experience-card h2 {
+    font-size: 22px; /* Larger heading text */
+  }
+
+  .experience-card p {
+    font-size: 18px; /* Larger paragraph text */
+  }
+
+  .experience-card em {
+    font-size: 16px; /* Larger em text */
+  }
+}

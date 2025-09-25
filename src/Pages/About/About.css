@@ -1,0 +1,166 @@
+
+.about-container {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Title */
+.about-title {
+  font-size: 40px;
+  color: #c8b6ff;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(200, 182, 255, 0.6);
+}
+
+.highlight {
+  color: #c084fc; 
+  text-shadow: 0 0 12px rgba(192, 132, 252, 0.8);
+}
+
+/* Card */
+.about-card {
+  background: rgba(18, 18, 30, 0.9);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  color: #d1c4ff;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.5); 
+  backdrop-filter: blur(8px); 
+}
+
+/* Profile Image with Gradient Border */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  padding: 3px; 
+  background: conic-gradient(
+    slateblue,
+    violet,
+    purple,
+    slateblue
+  );
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* Subtitle */
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #a78bfa;
+  text-shadow: 0 0 10px rgba(167, 139, 250, 0.7);
+}
+
+/* Description */
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  /* color: #e9ddff; */
+  color: white;
+}
+
+
+
+/* Media Queries */
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 30px; /* Smaller title for mobile screens */
+  }
+
+  .about-card {
+    width: 85%; /* Make the card take up more width */
+    padding: 20px; 
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px; /* Make the profile pic smaller */
+  }
+
+  .subtitle {
+    font-size: 20px; /* Slightly smaller subtitle */
+  }
+
+  .description {
+    font-size: 13px; /* Smaller text size for description */
+  }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 24px; /* Make the title even smaller */
+  }
+
+  .about-card {
+    width: 90%; /* Make the card even larger */
+    padding: 15px; /* Less padding for very small screens */
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: 100px; /* Further reduce the profile pic */
+  }
+
+  .subtitle {
+    font-size: 18px; /* Further reduce the subtitle size */
+  }
+
+  .description {
+    font-size: 12px; /* Adjust description size */
+  }
+}
+
+/* Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .about-container {
+    padding: 60px 10%; /* Add more padding for larger screens */
+  }
+
+  .about-title {
+    font-size: 60px; /* Increase title size for large screens */
+  }
+
+  .about-card {
+    width: 60%; /* Make the card more centered and spacious */
+    padding: 40px; /* Increase padding for large screens */
+  }
+
+  .profile-pic {
+    width: 180px;
+    height: 180px; /* Larger profile image */
+  }
+
+  .subtitle {
+    font-size: 28px; /* Larger subtitle */
+  }
+
+  .description {
+    font-size: 16px; /* Larger description text */
+  }
+}

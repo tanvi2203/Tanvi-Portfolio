@@ -1,0 +1,229 @@
+
+.home {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  padding: 60px 9% 0;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); 
+  flex-direction: row;
+}
+
+/* Typography */
+.home-info h1 {
+  font-weight: bold;
+  font-size: 55px;
+  color: #c8b6ff; 
+  text-shadow: 0 0 15px rgba(200, 182, 255, 0.6);
+}
+
+.home-info h2 {
+  font-size: 32px;
+  margin-top: -10px;
+  color: #a78bfa; 
+}
+
+.home-info h2 span {
+  color: #a95af8; 
+  text-shadow: 0 0 12px rgba(192, 132, 252, 0.7);
+}
+
+.home-info p {
+  font-size: 16px;
+  margin: 10px 0 25px;
+  color: #d1c4ff; 
+  line-height: 1.6;
+}
+
+
+/* Typewriter effect */
+.typing {
+  color: slateblue;
+  font-weight: bold;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  width: 3px;
+  background: slateblue;
+  animation: blink 0.8s infinite;
+}
+/* Glowing animated border around portrait */
+
+.glowing-border {
+  position: relative;
+  border-radius: 50%;
+  padding: 3px; 
+  background: conic-gradient(
+    slateblue,
+    violet,
+    purple,
+    slateblue
+  );
+}
+
+.glowing-border .img-item {
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #6d28d9; 
+  border: 2px solid #6d28d9;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(109, 40, 217, 0.8);
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background: transparent;
+  color: #a78bfa;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.8);
+}
+
+/* Image Styling */
+.home-img .img-box {
+  width: 32vw;
+  height: 32vw;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+   box-shadow: 0 0 30px rgba(167, 139, 250, 0.5);
+}
+
+.home-img .img-box .img-item {
+  position: relative;
+  width: 98%;
+  height: 98%;
+  border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(192, 132, 252, 0.6);
+}
+
+
+
+/* Media Queries */
+
+/* Mobile view (max-width: 768px) */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column; /* Stack the content vertically on smaller screens */
+    padding: 30px 5%; /* Reduce padding */
+  }
+
+  .home-info h1 {
+    font-size: 35px; /* Smaller font size for mobile */
+  }
+
+  .home-info h2 {
+    font-size: 24px; /* Adjusting for mobile */
+  }
+
+  .home-info p {
+    font-size: 14px; /* Adjust text size for readability */
+  }
+
+  .home-img .img-box {
+    width: 50vw; /* Make the image smaller on mobile */
+    height: 50vw;
+  }
+
+  .btn {
+    font-size: 14px; /* Make the button text smaller */
+    padding: 8px 20px;
+  }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .home-info h1 {
+    font-size: 28px; /* Smaller header for very small screens */
+  }
+
+  .home-info h2 {
+    font-size: 20px; /* Smaller subtitle */
+  }
+
+  .home-info p {
+    font-size: 12px; /* Smaller paragraph text */
+  }
+
+  .home-img .img-box {
+    width: 60vw; /* Further adjust image size for very small screens */
+    height: 60vw;
+  }
+
+  .btn {
+    font-size: 12px; /* Even smaller button text */
+    padding: 6px 15px;
+  }
+}
+
+/* Very Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .home {
+    padding: 80px 10%; /* Add more padding for larger screens */
+  }
+
+  .home-info h1 {
+    font-size: 70px; /* Increase font size for large screens */
+  }
+
+  .home-info h2 {
+    font-size: 42px; /* Bigger subheading */
+  }
+
+  .home-info p {
+    font-size: 18px; /* Larger paragraph text */
+  }
+
+  .home-img .img-box {
+    width: 20vw; /* Make the image smaller on very large screens */
+    height: 20vw;
+  }
+
+  .btn {
+    font-size: 18px; /* Larger button text */
+    padding: 12px 35px;
+  }
+}
+
+/* Ultra-Wide Screens (min-width: 2560px) */
+@media (min-width: 2560px) {
+  .home {
+    padding: 100px 12%; /* Increase padding more for ultra-wide screens */
+  }
+
+  .home-info h1 {
+    font-size: 80px; /* Extra large heading for ultra-wide screens */
+  }
+
+  .home-info h2 {
+    font-size: 50px; /* Larger subheading */
+  }
+
+  .home-info p {
+    font-size: 20px; /* Larger text for ultra-wide screens */
+  }
+
+  .home-img .img-box {
+    width: 15vw; /* Further reduce the image size */
+    height: 15vw;
+  }
+
+  .btn {
+    font-size: 20px; /* Extra large button text */
+    padding: 15px 40px;
+  }
+}

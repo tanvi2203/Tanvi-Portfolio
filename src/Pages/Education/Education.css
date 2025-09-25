@@ -1,0 +1,177 @@
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 80px 6% 0;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); 
+}
+
+/* Heading */
+.education-container h1 {
+  color: #a78bfa;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 0 15px rgba(200, 182, 255, 0.6);
+}
+
+/* Timeline */
+.timeline {
+  color: #e9ddff; 
+  position: relative;
+  max-width: 400px;
+  margin: 40px auto;
+  padding-left: 20px;
+  border-left: 3px solid #c084fc; 
+  box-shadow: -2px 0 11px rgba(192, 132, 252, 0.5);
+}
+
+/* Timeline Item */
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+  padding-left: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateX(8px);
+  color: #c084fc;
+}
+
+/* Dots */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #c084fc; 
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  box-shadow: 0 0 10px rgba(192, 132, 252, 0.8);
+}
+
+/* Content */
+.timeline-content h2 {
+  margin: 0 0 5px;
+  font-size: 17px;
+  /* color: #a78bfa; */
+  color: white;
+  text-shadow: 0 0 8px rgba(167, 139, 250, 0.6);
+}
+
+.timeline-content p {
+  margin: 0;
+  color: #d1c4ff; 
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.timeline-content span {
+  display: block;
+  font-size: 14px;
+  color: #e0d8ff;
+  margin-top: 5px;
+  text-shadow: 0 0 6px rgba(184, 166, 255, 0.6);
+}
+
+/* Media Queries */
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .education-container {
+    padding: 60px 5% 0; /* Reduce padding for mobile */
+  }
+
+  .education-container h1 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .timeline {
+    max-width: 100%; /* Allow timeline to take full width */
+    padding-left: 10px; /* Reduce padding */
+  }
+
+  .timeline-item {
+    margin-bottom: 30px; /* Reduce margin between items */
+  }
+
+  .timeline-content h2 {
+    font-size: 16px; /* Reduce title size */
+  }
+
+  .timeline-content p {
+    font-size: 14px; /* Adjust paragraph size for mobile */
+  }
+
+  .timeline-content span {
+    font-size: 12px; /* Smaller span text */
+  }
+}
+
+/* Medium Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .education-container {
+    padding: 70px 6% 0; /* Slightly adjust padding for tablets */
+  }
+
+  .education-container h1 {
+    font-size: 2.2rem; /* Slightly larger heading for tablets */
+  }
+
+  .timeline {
+    max-width: 80%; /* Allow for some margin on tablets */
+  }
+
+  .timeline-item {
+    margin-bottom: 35px; /* Moderate margin between items */
+  }
+
+  .timeline-content h2 {
+    font-size: 17px; /* Adjust font size of the title */
+  }
+
+  .timeline-content p {
+    font-size: 15px; /* Slightly larger text for paragraph */
+  }
+
+  .timeline-content span {
+    font-size: 13px; /* Slightly larger span text */
+  }
+}
+
+/* Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .education-container {
+    padding: 100px 10% 0; /* More padding for larger screens */
+  }
+
+  .education-container h1 {
+    font-size: 3rem; /* Larger heading size */
+  }
+
+  .timeline {
+    max-width: 600px; /* Increase width of the timeline */
+    padding-left: 30px; /* More padding */
+  }
+
+  .timeline-item {
+    margin-bottom: 50px; /* More space between timeline items */
+  }
+
+  .timeline-content h2 {
+    font-size: 20px; /* Increase title size */
+  }
+
+  .timeline-content p {
+    font-size: 18px; /* Larger paragraph text */
+  }
+
+  .timeline-content span {
+    font-size: 15px; /* Larger span text */
+  }
+}

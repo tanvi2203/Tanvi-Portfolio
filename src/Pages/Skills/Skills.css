@@ -1,0 +1,218 @@
+
+.skills-section {
+  height: 100vh;
+  text-align: center;
+  background: radial-gradient(circle at center, #0d0d1a, #050510); /* Dark purple */
+}
+
+/* Heading */
+.skills-heading {
+  font-size: 2.5rem;
+  color: #a78bfa;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding-top: 70px;
+  text-shadow: 0 0 15px rgba(200, 182, 255, 0.6);
+}
+
+/* Container */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Category Card */
+.skills-category {
+  background: rgba(18, 18, 30, 0.9); 
+  padding: 2rem;
+  border-radius: 16px;
+  min-width: 300px;
+  color: #e9ddff;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.5); 
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-category:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 35px rgba(192, 132, 252, 0.7);
+}
+
+.skills-category h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #c084fc; 
+  text-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
+}
+/* Grid Layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Skill Items */
+.skill-item {
+  background: #2a223a;
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 0 12px rgba(109, 40, 217, 0.4);
+}
+
+.skill-item:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(192, 132, 252, 0.8);
+}
+
+.skill-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 0 8px rgba(192, 132, 252, 0.7)); 
+}
+
+.skill-item span {
+  font-size: 0.9rem;
+  text-align: center;
+  color: white;
+}
+
+
+/* Media Queries */
+
+/* Mobile View (max-width: 768px) */
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 2rem; /* Reduce the heading size on smaller screens */
+  }
+
+  .skills-container {
+    padding: 1rem; /* Reduce padding for smaller screens */
+    flex-direction: column;
+    gap: 1rem; /* Stack the categories vertically */
+  }
+
+  .skills-category {
+    width: 100%; /* Allow each category to take full width on smaller screens */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row on tablets */
+  }
+
+  .skill-item {
+    padding: 0.5rem; /* Less padding for smaller screens */
+  }
+
+  .skill-item img {
+    width: 28px; /* Reduce image size */
+    height: 28px;
+  }
+
+  .skill-item span {
+    font-size: 0.75rem; /* Reduce font size for mobile */
+  }
+}
+
+/* Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .skills-heading {
+    font-size: 1.8rem; /* Make the heading smaller on very small screens */
+  }
+
+  .skills-container {
+    padding: 0.5rem; /* Less padding */
+  }
+
+  .skills-category {
+    width: 100%;
+    padding: 0.75rem; /* Further reduce padding */
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr; /* Stack items in a single column */
+  }
+
+  .skill-item {
+    padding: 0.25rem; /* Even less padding */
+  }
+
+  .skill-item img {
+    width: 24px; /* Further reduce icon size */
+    height: 24px;
+  }
+
+  .skill-item span {
+    font-size: 0.7rem; /* Make text smaller */
+  }
+}
+
+/* Medium Screens (min-width: 768px, max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .skills-heading {
+    font-size: 2.2rem; /* Slightly larger heading on medium screens */
+  }
+
+  .skills-container {
+    padding: 1.5rem; /* Moderate padding for tablets */
+    flex-direction: row; /* Row layout for medium screens */
+    gap: 1.5rem;
+  }
+
+  .skills-category {
+    width: 45%; /* Make the category take 45% width on medium screens */
+    padding: 1.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row on medium screens */
+  }
+
+  .skill-item img {
+    width: 30px; /* Slightly larger icon size for medium screens */
+    height: 30px;
+  }
+
+  .skill-item span {
+    font-size: 0.8rem; /* Adjust font size for better readability */
+  }
+}
+
+/* Large Screens (min-width: 1920px) */
+@media (min-width: 1920px) {
+  .skills-heading {
+    font-size: 3rem; /* Increase heading size for large screens */
+  }
+
+  .skills-container {
+    padding: 3rem; /* Increase padding for larger screens */
+    gap: 2rem; /* Increase space between items */
+  }
+
+  .skills-category {
+    width: 30%; /* Make the category take up less space on larger screens */
+    padding: 2.5rem; /* Add more padding for larger screens */
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row on large screens */
+  }
+
+  .skill-item img {
+    width: 40px; /* Larger icon size */
+    height: 40px;
+  }
+
+  .skill-item span {
+    font-size: 1rem; /* Increase font size for better readability */
+  }
+}
