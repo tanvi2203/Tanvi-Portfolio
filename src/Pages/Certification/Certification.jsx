@@ -3,6 +3,24 @@ import "./Certification.css";
 function Certification() {
   const certifications = [
     {
+      title: "SQL for Data Analysis",
+      issuer: "Simplilearn",
+      date: "May 2026",
+      credential: "https://drive.google.com/file/d/1qsqo7ZzB9DB2gnHXkonQnO3gYhxYh-a3/view?usp=sharing",
+    },
+     {
+      title: "Fullstack Python Course",
+      issuer: "NetTech India",
+      date: "Sep 2025",
+      credential: "https://drive.google.com/file/d/1aggn9ZJ22ITxVW5fbsghRKNqKz_ma5pp/view?usp=sharing",
+    },
+     {
+      title: "Deloitte Australia – Data Analytics Job Simulation ",
+      issuer: "Forage",
+      date: "June 2025",
+      credential: "https://drive.google.com/file/d/1S-Bpe_5XIpdP21Sn3jECAfmH2nxvp2zd/view?usp=sharing",
+    },
+    {
       title: " Python Programming",
       issuer: "Kodacy in association with Scientific Platforms and Cosmic Explorations (SPACE)",
       date: "September 2023",
@@ -14,12 +32,8 @@ function Certification() {
       date: "2022",
       credential: "https://drive.google.com/file/d/1yCHlwgy8KUxl9s7jrsPn7xVVHR10_FRs/view?usp=sharing",
     },
-    {
-      title: "Deloitte Australia – Data Analytics Job Simulation ",
-      issuer: "Forage",
-      date: "June 2025",
-      credential: "https://drive.google.com/file/d/1S-Bpe_5XIpdP21Sn3jECAfmH2nxvp2zd/view?usp=sharing",
-    },
+   
+     
   ];
 
   return (
