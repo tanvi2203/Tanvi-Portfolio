@@ -14,6 +14,14 @@ const projects = [
     description: "Personal website showcasing projects and resume."
   },
   {
+   {
+  title: "Customer Data Cleaning Insights",
+  imgSrc: customerDataImg,
+  demoLink: "https://tanvi2203.github.io/customer-data-cleaning-insights/",
+  tech: "Python, Pandas, MySQL, HTML, CSS, JavaScript",
+  description: "Data analytics project focused on customer personality analysis using Python (Pandas) and MySQL, featuring data cleaning, business insights, and SQL-driven identification of high-value customer segments."
+  },
+  {
     title: "Coffee Shop Website",
     imgSrc: coffeeShopImg,
     demoLink: "https://tanvi2203.github.io/Coffee-Shop-Website/",
