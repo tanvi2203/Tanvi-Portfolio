@@ -1,7 +1,6 @@
 import React from 'react';
 import './Projects.css';
 import portfolioImg from "/Images/portfolio1.jpg";
-import customerDataImg from "/Images/customerDataImag.jpg";
 import coffeeShopImg from "/Images/coffee3.jpg";
 import flowerShopImg from "/Images/flower1.jpg";
 import galleryImg from "/Images/image1.jpg"; 
@@ -13,13 +12,6 @@ const projects = [
     demoLink: "https://tanvi-portfolio-nine.vercel.app/",
     tech: "HTML , CSS , Javascript , React",
     description: "Personal website showcasing projects and resume."
-  },
-  {
-  title: "Customer Data Cleaning Insights",
-  imgSrc: customerDataImg,
-  demoLink: "https://tanvi2203.github.io/customer-data-cleaning-insights/",
-  tech: "Python, Pandas, MySQL",
-  description: "Data analytics project focused on customer personality analysis using Python (Pandas) and MySQL, featuring data cleaning, business insights, and SQL-driven identification of high-value customer segments."
   },
   {
     title: "Coffee Shop Website",
