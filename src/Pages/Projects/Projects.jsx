@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import portfolioImg from "/Images/portfolio1.jpg";
-import customerDataImg from "/Images/customerdataImag.png";
+import customerDataImg from "/Images/customerDataImag.jpg";
 import coffeeShopImg from "/Images/coffee3.jpg";
 import flowerShopImg from "/Images/flower1.jpg";
 import galleryImg from "/Images/image1.jpg"; 
