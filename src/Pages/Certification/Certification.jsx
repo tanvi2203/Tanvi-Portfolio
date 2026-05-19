@@ -3,6 +3,12 @@ import "./Certification.css";
 function Certification() {
   const certifications = [
     {
+      title: "Full Stack Web Development ",
+      issuer: "NetTech India",
+      date: "5 Sep 2025",
+      credential:"https://drive.google.com/file/d/1nD9GvtRO4FdT3qXW2XoCxjliQzAxbfLk/view?usp=sharing",
+    },
+    {
       title: " Python Programming",
       issuer: "Kodacy in association with Scientific Platforms and Cosmic Explorations (SPACE)",
       date: "September 2023",

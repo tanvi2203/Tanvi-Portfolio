@@ -1,5 +1,7 @@
 import React from 'react';
 import './Projects.css';
+import salesImg from "/Images/Sales.jpg";
+import customerImg from "/Images/customer.jpg";
 import portfolioImg from "/Images/portfolio1.jpg";
 import coffeeShopImg from "/Images/coffee3.jpg";
 import flowerShopImg from "/Images/flower1.jpg";
@@ -9,8 +11,8 @@ const projects = [
   {
     title: "Portfolio Website",
     imgSrc: portfolioImg,
-    demoLink: "https://your-portfolio-demo.com",
-    tech: "HTML , CSS , Javascript , React",
+    demoLink: "https://tanvi-portfolio-nine.vercel.app/",
+    tech: "HTML, CSS, JavaScript, React",
     description: "Personal website showcasing projects and resume."
   },
   {
@@ -34,6 +36,20 @@ const projects = [
     tech: "HTML",
     description: "Image gallery with built-in image download functionality."
   },
+  {
+    title: "Sales Performance Dashboard",
+    imgSrc: salesImg,
+    demoLink: "https://github.com/tanvi2203/sales-performance-dashboard",
+    tech: "Excel, Power BI",
+    description: "Interactive dashboard on 51,291 rows of retail data. Central region leads sales at ₹2.82M, Technology leads profit at 45%."
+  },
+  {
+    title: "Customer Data Cleaning & Insights",
+    imgSrc: customerImg,
+    demoLink: "https://github.com/tanvi2203/customer-data-cleaning-insights",
+    tech: "Python (pandas), SQL, MySQL",
+    description: "Cleaned 2,240 customer records and ran SQL queries finding PhD customers spend 56x more than basic education customers."
+  },
 ];
 
 function Projects() {
@@ -49,8 +65,8 @@ function Projects() {
               <p className="tech">{project.tech}</p>
               <p className="description">{project.description}</p>
               <a href={project.demoLink} target="_blank" className="demo-button">
-                Live Demo
-              </a>
+  {project.demoLink.includes("github") ? "View Project" : "Live Demo"}
+</a>
             </div>
           </div>
         ))}

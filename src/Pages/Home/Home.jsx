@@ -51,7 +51,7 @@ function Home() {
           <a
             href="/Tanvi_Dudhgaonkar_Resume.pdf"
             download="Tanvi_Dudhgaonkar_Resume.pdf"
-            className="btn"
+            className="tn"
             >
               Download CV
               </a>
