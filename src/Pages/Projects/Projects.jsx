@@ -12,7 +12,11 @@ const projects = [
     title: "Portfolio Website",
     imgSrc: portfolioImg,
     demoLink: "https://tanvi-portfolio-nine.vercel.app/",
+<<<<<<< HEAD
     tech: "HTML, CSS, JavaScript, React",
+=======
+    tech: "HTML , CSS , Javascript , React",
+>>>>>>> 8c04c5c12a9acda259a65d1d7eb36e41d5bd8d2b
     description: "Personal website showcasing projects and resume."
   },
   {
