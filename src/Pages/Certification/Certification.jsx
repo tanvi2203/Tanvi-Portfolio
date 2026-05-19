@@ -3,12 +3,12 @@ import "./Certification.css";
 function Certification() {
   const certifications = [
     {
-<<<<<<< HEAD
       title: "Full Stack Web Development ",
       issuer: "NetTech India",
       date: "5 Sep 2025",
       credential:"https://drive.google.com/file/d/1nD9GvtRO4FdT3qXW2XoCxjliQzAxbfLk/view?usp=sharing",
-=======
+    },
+    {
       title: "SQL for Data Analysis",
       issuer: "Simplilearn",
       date: "May 2026",
@@ -25,7 +25,6 @@ function Certification() {
       issuer: "Forage",
       date: "June 2025",
       credential: "https://drive.google.com/file/d/1S-Bpe_5XIpdP21Sn3jECAfmH2nxvp2zd/view?usp=sharing",
->>>>>>> 8c04c5c12a9acda259a65d1d7eb36e41d5bd8d2b
     },
     {
       title: " Python Programming",
