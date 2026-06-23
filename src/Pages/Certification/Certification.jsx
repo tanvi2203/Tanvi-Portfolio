@@ -3,6 +3,12 @@ import "./Certification.css";
 function Certification() {
   const certifications = [
     {
+      title: "GenAI Powered Data Analytics Job Simulation",
+      issuer: "Forage",
+      date: " 11 June 2026",
+      credential: "https://drive.google.com/file/d/1lpgbvrTlFIgrg1O9gyzf63WC7CyjeVp6/view?usp=sharing",
+    },
+    {
       title: "Full Stack Web Development ",
       issuer: "NetTech India",
       date: "5 Sep 2025",
@@ -32,12 +38,7 @@ function Certification() {
       date: "September 2023",
       credential: "https://drive.google.com/file/d/125BLrGqTw23K8q-79Uwy5h_1h0hWF5An/view?usp=sharing",
     },
-    {
-      title: "GenAI Powered Data Analytics Job Simulation",
-      issuer: "Forage",
-      date: " 11 June 2026",
-      credential: "https://drive.google.com/file/d/1lpgbvrTlFIgrg1O9gyzf63WC7CyjeVp6/view?usp=sharing",
-    },
+    
     {
       title: "Blockchain Technology",
       issuer: "",
