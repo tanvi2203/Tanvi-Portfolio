@@ -85,6 +85,26 @@
   color: #a78bfa;
   box-shadow: 0 0 25px rgba(167, 139, 250, 0.8);
 }
+.tn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #6d28d9;
+  border: 2px solid #6d28d9;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(109, 40, 217, 0.8);
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.tn:hover {
+  background: transparent;
+  color: #a78bfa;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.8);
+}
 
 /* Image Styling */
 .home-img .img-box {
