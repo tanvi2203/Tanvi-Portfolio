@@ -3,23 +3,23 @@ import "./Certification.css";
 function Certification() {
   const certifications = [
     {
-      title: "GenAI Powered Data Analytics Job Simulation",
-      issuer: "Forage",
-      date: " 11 June 2026",
-      credential: "https://drive.google.com/file/d/1lpgbvrTlFIgrg1O9gyzf63WC7CyjeVp6/view?usp=sharing",
-    },
-    {
-      title: "SQL for Data Analysis",
-      issuer: "Simplilearn",
-      date: "May 2026",
-      credential: "https://drive.google.com/file/d/1qsqo7ZzB9DB2gnHXkonQnO3gYhxYh-a3/view?usp=sharing",
-    },
-    {
-      title: "Full Stack Web Development ",
-      issuer: "NetTech India",
-      date: "Sep 2025",
-      credential:"https://drive.google.com/file/d/1nD9GvtRO4FdT3qXW2XoCxjliQzAxbfLk/view?usp=sharing",
-    },
+  title: "GenAI Powered Data Analytics Job Simulation",
+  issuer: "Forage",
+  date: "11 June 2026",
+  credential: "https://drive.google.com/file/d/1lpgbvrTlFIgrg1O9gyzf63WC7CyjeVp6/view?usp=sharing",
+},
+{
+  title: "Full Stack Web Development",
+  issuer: "NetTech India",
+  date: "5 Sep 2025",
+  credential: "https://drive.google.com/file/d/1nD9GvtRO4FdT3qXW2XoCxjliQzAxbfLk/view?usp=sharing",
+},
+{
+  title: "SQL for Data Analysis",
+  issuer: "Simplilearn",
+  date: "May 2026",
+  credential: "https://drive.google.com/file/d/1qsqo7ZzB9DB2gnHXkonQnO3gYhxYh-a3/view?usp=sharing",
+},
     {
       title: "Deloitte Australia – Data Analytics Job Simulation ",
       issuer: "Forage",
@@ -38,9 +38,11 @@ function Certification() {
       date: "2022",
       credential: "https://drive.google.com/file/d/1yCHlwgy8KUxl9s7jrsPn7xVVHR10_FRs/view?usp=sharing",
     },
-   
+  
+  
      
   ];
+
 
   return (
     <section className="certification-section" id="certification">
