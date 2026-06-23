@@ -21,6 +21,7 @@ const skillsData = {
     { name: 'Git', icon: '/Icons/icons8-git.svg' },
     { name: 'GitHub', icon: '/Icons/icons8-github.svg' },
     { name: 'VS Code', icon: '/Icons/icons8-vs-code.svg' },
+     { name: 'Power BI', icon: '/Icons/icons8-power-bi-2021.svg' },
   ],
 };
 
