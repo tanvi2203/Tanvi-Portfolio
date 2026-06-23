@@ -49,8 +49,8 @@ function Home() {
           </p>
           <div className="btn-sci">
           <a
-            href="/Tanvi_Dudhgaonkar_Resume.pdf"
-            download="Tanvi_Dudhgaonkar_Resume.pdf"
+            href="Tanvi_Dudhgaonkar_Resume_FrontendDeveloper.docx"
+            download="Tanvi_Dudhgaonkar_Resume_FrontendDeveloper.docx"
             className="tn"
             >
               Download CV
